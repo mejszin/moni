@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1#header {
+    font-family: "Nunito", sans-serif;
+    padding: 32px 32px 0;
+    margin: 0;
+}
+
+#grid-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 32px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#indicator-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 72px);
+    grid-gap: 8px;
+}
+
+.indicator {
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.indicator > h1, p {
+    font-family: "Nunito", serif;
+    margin: 0 2px;
+    color: black;
+}
+
+.indicator > h1 {
+    font-size: 1.2em;
+}
+
+.indicator > p {
+    font-size: 0.8em;
+}
+
+.status {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid black;
+    margin-top: auto;
+}
+
+.success {
+    background-color: #37D351;
+    color: white;
+}
+
+.failure {
+    background-color: #A00000;
+    color: white;
+}
+
+.ready {
+    background-color: #00B9C0;
+    color: white
+}
+
+.expired {
+    background-color: #F9A602;
+    color: black;
+}
